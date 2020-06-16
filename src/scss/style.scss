@@ -1,4 +1,3 @@
-/* начало стилей хедера*/
 
 body {
   padding: 0;
@@ -198,7 +197,7 @@ header {
 }
 
 .team {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   .card-title {
     font-size: 16px;
     font-weight: bold;
@@ -222,8 +221,65 @@ header {
     margin-left: 0.1rem !important;
     margin-right: 0.1rem !important;
   }
+}
 
-  p {
-    margin-bottom: 10px;
+.team-info {
+  margin-bottom: 110px;
+}
+.main-icon {
+  .row {
+    padding-bottom: 40px;
+    padding-top: 40px;
   }
+}
+
+.wrap__social-icon {
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+}
+.social-icon__date {
+  font-size: 14px;
+  font-family: "Montserrat",sans-serif;
+  color: rgb(85, 85, 85);
+  line-height: 1.571;
+}
+
+.contacts {
+    background: url("../img/background_footer.jpg") no-repeat center;
+    background-size: cover;
+    height: 675px;
+h2 {
+  padding-top: 100px;
+  color: white;
+  margin-bottom: 10px;
+}
+  textarea {
+    height: 88%;
+  }
+  button {
+    margin-top: 5px;
+  }
+}
+
+.sentMessage {
+  margin-top: 50px;
+}
+
+.form-control {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-control {
+    padding: 20px;
+  }
+footer {
+  margin-top: -90px;
 }
