@@ -131,6 +131,17 @@ header {
   display: block;
 }
 
+.card-deck {
+  margin-top: 80px;
+  .card-title {
+    margin-top: 15px;
+    text-transform: none;
+  }
+  .card-text {
+    margin-top: 10px;
+  }
+}
+
 
 /*стили сервис конец*/
 
@@ -174,4 +185,9 @@ header {
   padding: 30px;
 }
 
+.grid-posts {
+  .row {
+    margin-bottom: 50px;
+  }
+}
 /*портфолио конец*/
