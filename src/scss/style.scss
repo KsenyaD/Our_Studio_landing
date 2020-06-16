@@ -50,11 +50,6 @@ header {
   color: #fed136;
 }
 
-.wrapper {
-  width: 955px;
-  margin: auto;
-}
-
 .subtitle-header {
   font-size: 40px;
   font-family: "DroidSerif", sans-serif;
@@ -76,7 +71,7 @@ header {
   margin: 0;
 }
 
-.btn-primary{
+.btn-primary {
   background-color: #fed136;
   border-color: #fed136;
 }
@@ -95,4 +90,88 @@ header {
   display: block;
 }
 
+@media screen and (max-width: 540px) {
+  header {
+    height: 480px;
+  }
+  .subtitle-header {
+    padding-top: 200px;
+    font-size: 20px;
+  }
+  .title-header {
+    font-size: 25px;
+  }
+  .btn {
+    height: 65px;
+    width: 200px;
+  }
+
+}
+
 /* конец стилей хедера*/
+/*стили сервис начало*/
+
+.title-main {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 120px;
+  margin: 0;
+}
+
+.subtitle-main {
+  font-size: 16px;
+  font-family: "DroidSerif", sans-serif;
+  color: rgb(119, 119, 119);
+  font-style: italic;
+  text-align: center;
+  display: block;
+}
+
+
+/*стили сервис конец*/
+
+/*портфолио начало*/
+.container {
+  max-width: 1000px;
+}
+
+.grid-posts {
+  margin-top: 80px;
+}
+
+.mb-4, .my-4 {
+  margin-bottom: 3rem !important;
+}
+
+.card-title {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0;
+}
+
+.card-text {
+  font-size: 14px;
+  font-family: "DroidSerif", sans-serif;
+  color: rgb(115, 115, 115);
+  font-style: italic;
+  line-height: 1.2;
+  text-align: center;
+}
+.card {
+  width: 290px;
+  height: 390px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+/*портфолио конец*/
