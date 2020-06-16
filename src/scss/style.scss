@@ -1,4 +1,5 @@
 /* начало стилей хедера*/
+
 body {
   padding: 0;
   margin: 0;
@@ -108,9 +109,6 @@ header {
 
 }
 
-/* конец стилей хедера*/
-/*стили сервис начало*/
-
 .title-main {
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
@@ -133,21 +131,19 @@ header {
 
 .card-deck {
   margin-top: 80px;
+
   .card-title {
     margin-top: 15px;
     text-transform: none;
   }
+
   .card-text {
     margin-top: 10px;
   }
 }
 
-
-/*стили сервис конец*/
-
-/*портфолио начало*/
-.container {
-  max-width: 1000px;
+.card-services {
+  margin-bottom: 115px;
 }
 
 .grid-posts {
@@ -166,6 +162,7 @@ header {
   line-height: 1.2;
   text-align: center;
   margin: 0;
+  text-transform: none;
 }
 
 .card-text {
@@ -176,6 +173,7 @@ header {
   line-height: 1.2;
   text-align: center;
 }
+
 .card {
   width: 290px;
   height: 390px;
@@ -190,4 +188,42 @@ header {
     margin-bottom: 50px;
   }
 }
-/*портфолио конец*/
+
+.team-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: black;
+  display: block;
+}
+
+.team {
+  margin-bottom: 20px;
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 27px;
+  }
+
+  .card-text {
+    margin-top: 5px;
+  }
+
+  .col-md-4 {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .row {
+    margin: auto;
+  }
+
+  .ml-2, .mx-2 {
+    margin-left: 0.1rem !important;
+    margin-right: 0.1rem !important;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}
