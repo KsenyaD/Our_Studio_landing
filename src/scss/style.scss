@@ -72,7 +72,7 @@ header {
 }
 
 .navbar {
-  padding-top: 30px;
+  padding: 20px;
 }
 
 .nav-item {
@@ -170,6 +170,7 @@ header {
 }
 
 .about-us {
+  padding-bottom: 160px;
   .about-us__title {
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
@@ -177,9 +178,6 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
-  }
-  .offset-md-2 {
-    margin-left: 14%;
   }
   .about-us__subtitle {
     margin-top: 5px;
@@ -194,9 +192,9 @@ header {
   }
 
   .list-group {
-    max-width: 820px;
-    margin-top: 80px;
-    padding-bottom: 120px;
+    max-width: 810px;
+    margin: 80px auto 0;
+    position: relative;
   }
 
   .list-item {
@@ -205,29 +203,36 @@ header {
     justify-content: space-between;
     width: 495px;
     padding: 0;
+    margin-bottom: 90px;
   }
   .timeline-image {
     width: 185px;
     height: 185px;
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
   }
+
 li {
   list-style-type: none;
 }
+}
+
+.list-group::before {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1.5px;
+  content: "";
+  background-color: #e9ecef;
 }
 
 .card-img-top:hover {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
-}
-
-@media screen and (max-width: 800px) {
-  .about-us {
-    .offset-md-2 {
-      margin-left: 0;
-    }
-
-  }
 }
 
 .card-deck {
@@ -277,11 +282,6 @@ li {
 .col-lg-4 .col-sm-6 .mb-4 {
   padding-right: 15px;
   padding-left: 15px;
-}
-
-.card {
-  width: 290px;
-  height: 390px;
 }
 
 .card-body {
@@ -356,6 +356,26 @@ li {
     margin-right: 0.1rem !important;
   }
 }
+.about-us__left {
+  h5 {
+    text-align: right;
+  }
+  p {
+    text-align: right;
+  }
+}
+
+.about-us__right {
+  .about-us__info {
+    margin-left: 46.5%;
+  }
+  h5 {
+    text-align: left;
+  }
+  p {
+    text-align: left;
+  }
+}
 
 .team-info {
   margin-bottom: 110px;
@@ -364,9 +384,7 @@ li {
   color: rgb(119, 119, 119);
   line-height: 1.2;
 }
-.about-us__title-r {
-  text-align: right;
-}
+
 
 @media screen and (max-width: 700px) {
   .about-us{
@@ -379,10 +397,6 @@ li {
       justify-content: center;
     }
   }
-  .about-us__title-r {
-    text-align: left;
-  }
-
 }
 
 .main-icon {
