@@ -11,17 +11,14 @@
     <title>Welcome To Our Studio!</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+
+<nav class="navbar navbar-expand-lg fixed-top navbar__mob" id="mainNav">
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logos/logo.png" alt="Golden"></a>
-        <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
+        <button class="navbar-toggler navbar-toggler-right collapsed" id="navbar__btn" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu</i></button>
+
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ml-auto">
-
-
-
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
@@ -31,6 +28,7 @@
         </div>
     </div>
 </nav>
+
 <header class="masthead">
     <div class="container">
         <p class="subtitle-header">Welcome To Our Studio!</p>
@@ -41,8 +39,8 @@
 
 <main>
 
-  <section class="page-section bg-light">
-      <div class="container">
+  <section class="page-section bg-light services">
+      <div class="container ">
           <div class="container">
               <h2 class="title-main text-uppercase">Services</h2>
               <p class="subtitle-main">Proin iaculis purus consequat sem cure.</p>
@@ -50,21 +48,21 @@
           <div class="card-deck">
               <div class="row text-center card-services">
                   <div class="col-md-4">
-                      <span class="fa-stack fa-4x"> <img src="img/icon/icon1.png" width="74" height="74" alt="image description"></span>
+                      <span class="fa-stack fa-4x"> <img src="img/icon/icon_service1.png" width="74" height="74" alt="image description"></span>
                       <h5 class="card-title">E-Commerce</h5>
                       <p class="card-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
                           suscipit aenean rhoncus posuere odio in tincidunt.</p>
                   </div>
 
                   <div class="col-md-4">
-                      <span class="fa-stack fa-4x"> <img src="img/icon/icon2.png" width="74" height="74" alt="image description"></span>
+                      <span class="fa-stack fa-4x"> <img src="img/icon/icon_service2.png" width="74" height="74" alt="image description"></span>
                       <h5 class="card-title">Responsive Web</h5>
                       <p class="card-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
                           suscipit aenean rhoncus posuere odio in tincidunt.</p>
                   </div>
 
                   <div class="col-md-4">
-                      <span class="fa-stack fa-4x"> <img src="img/icon/icon3.png" width="74" height="74" alt="image description"></span>
+                      <span class="fa-stack fa-4x"> <img src="img/icon/icon_service3.png" width="74" height="74" alt="image description"></span>
                       <h5 class="card-title">Web Security</h5>
                       <p class="card-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
                           suscipit aenean rhoncus posuere odio in tincidunt.</p>
@@ -74,7 +72,7 @@
       </div>
   </section>
 
-    <section class="page-section">
+    <section class="page-section portfolio">
         <h2 class="title-main text-uppercase">Our portfolio</h2>
         <p class="subtitle-main">Proin iaculis purus consequat sem cure.</p>
         <div class="grid-posts">
@@ -155,7 +153,7 @@
                         <div class="about-us__info">
                             <h5 class="about-us__title card-title about-us__title-l">July 2010</h5>
                             <p class="about-us__subtitle card-title about-us__title-l"> Our Humble Beginnings</p>
-                            <p class="about-us__text text-right">
+                            <p class="about-us__text about-us__title-l">
                                 Proin iaculis purus consequat sem cure
                                 digni ssim. Donec porttitora entum suscipit
                                 aenean rhoncus posuere odio in tincidunt. Proin

@@ -66,6 +66,11 @@ header {
   width: 100%;
   height: 700px;
 }
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 5px;
+}
 
 .mainNav_active {
   background-color: #1d2124;
@@ -89,6 +94,20 @@ header {
 
 #mainNav .nav-link:hover {
   color: #fed136;
+}
+
+#mainNav {
+  .navbar-toggler {
+    padding: 10px;
+    font-family: "DroidSerif", sans-serif;
+    font-size: 0.75rem;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #fed136;
+  }
+  .show {
+    background-color: #1d2124;
+  }
 }
 
 .subtitle-header {
@@ -131,6 +150,13 @@ header {
   display: block;
 }
 
+@media screen and (max-width: 1086px) {
+  .navbar__mob {
+    background-color: #1d2124;
+  }
+}
+
+
 @media screen and (max-width: 540px) {
   header {
     height: 480px;
@@ -168,6 +194,95 @@ header {
   text-align: center;
   display: block;
 }
+@media screen and (max-width: 850px) {
+  .title-main {
+    padding-top: 50px;
+  }
+}
+
+.card-services {
+  margin-bottom: 115px;
+}
+
+
+@media screen and (max-width: 850px){
+  .services {
+    .card-services {
+      margin-bottom: 50px;
+    }
+    .col-md-4 {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+
+.portfolio {
+  .card-img-top:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  .card-deck {
+    margin-top: 80px;
+
+    .card-title {
+      margin-top: 15px;
+      text-transform: none;
+    }
+
+    .card-text {
+      margin-top: 10px;
+    }
+  }
+
+  .grid-posts {
+    margin-top: 80px;
+  }
+
+  .mb-4, .my-4 {
+    margin-bottom: 3rem !important;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+    text-transform: none;
+  }
+
+  .card-text {
+    font-size: 14px;
+    font-family: "DroidSerif", sans-serif;
+    color: rgb(115, 115, 115);
+    font-style: italic;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .card-body {
+    padding: 30px;
+  }
+  .grid-posts {
+    .row {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 850px){
+  .portfolio {
+    .card-body {
+      padding: 10px;
+    }
+  }
+}
+
 
 .about-us {
   padding-bottom: 160px;
@@ -229,94 +344,6 @@ li {
   background-color: #e9ecef;
 }
 
-.card-img-top:hover {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-.card-deck {
-  margin-top: 80px;
-
-  .card-title {
-    margin-top: 15px;
-    text-transform: none;
-  }
-
-  .card-text {
-    margin-top: 10px;
-  }
-}
-
-.card-services {
-  margin-bottom: 115px;
-}
-
-.grid-posts {
-  margin-top: 80px;
-}
-
-.mb-4, .my-4 {
-  margin-bottom: 3rem !important;
-}
-
-.card-title {
-  font-size: 18px;
-  font-family: "Montserrat", sans-serif;
-  color: rgb(51, 51, 51);
-  font-weight: bold;
-  line-height: 1.2;
-  text-align: center;
-  margin: 0;
-  text-transform: none;
-}
-
-.card-text {
-  font-size: 14px;
-  font-family: "DroidSerif", sans-serif;
-  color: rgb(115, 115, 115);
-  font-style: italic;
-  line-height: 1.2;
-  text-align: center;
-}
-.col-lg-4 .col-sm-6 .mb-4 {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.card-body {
-  padding: 30px;
-}
-
-@media (max-width: 1000px) {
-  .col-sm-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 700px) {
-.col-sm-6{
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-  display: flex;
-  justify-content: center;
-  }
-}
-@media (max-width: 700px) {
-  .col-sm-6{
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.grid-posts {
-  .row {
-    margin-bottom: 50px;
-  }
-}
 
 .team-pic {
   width: 220px;
@@ -363,9 +390,19 @@ li {
   p {
     text-align: right;
   }
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
 }
 
 .about-us__right {
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
   .about-us__info {
     margin-left: 46.5%;
   }
@@ -374,6 +411,54 @@ li {
   }
   p {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .about-us {
+    .card-title{
+      font-size: 14px;
+    }
+    .about-us__text {
+      font-size: 12px;
+    }
+    .list-item {
+      margin-bottom: 40px;
+    }
+    .timeline-image {
+      width: 150px;
+      margin-left: -75px;
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .about-us {
+
+    .list-item {
+      display: flex;
+      justify-content: flex-end;
+      h5,p {
+        text-align: left;
+      }
+    }
+    .timeline-image {
+      left: 15%;
+    }
+  }
+  .list-group::before {
+    left: 15%;
+  }
+  .about-us__text {
+    float: right;
+  }
+
+
+}
+@media screen and (max-width: 760px) {
+  .about-us {
+    .list-item {
+      flex-direction: row;
+    }
   }
 }
 
@@ -389,15 +474,59 @@ li {
 @media screen and (max-width: 700px) {
   .about-us{
     width: auto;
-    .list-item {
-      flex-direction: column-reverse;
-    }
     .list-group {
       display: flex;
       justify-content: center;
     }
+    .align-self-end {
+      align-self: baseline !important;
+    }
+
+    .list-item {
+      width: 450px;
+        .card-title {
+          margin: 0;
+          padding: 0;
+        }
+    }
   }
 }
+
+
+@media screen and (max-width: 540px) {
+  .about-us{
+
+    .timeline-image {
+      height: 100px;
+      width: 100px;
+      left: 20%;
+    }
+    .list-item {
+      max-width: 390px;
+      h5, p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 470px) {
+  .about-us{
+    .list-item {
+      max-width: 300px;
+      justify-content: flex-start;
+    }
+    .about-us__info {
+      margin-left: 120px;
+    }
+    .about-us__text {
+      width: 180px;
+    }
+  }
+}
+
+
+
 
 .main-icon {
   .row {
@@ -422,10 +551,10 @@ li {
     background: url("../img/background_footer.jpg") no-repeat center;
     background-size: cover;
     height: 675px;
-h2 {
-  padding-top: 100px;
-  color: white;
-  margin-bottom: 10px;
+  h2 {
+    padding-top: 100px;
+    color: white;
+    margin-bottom: 10px;
 }
   textarea {
     height: 88%;
@@ -436,12 +565,19 @@ h2 {
   }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 850px){
 .team {
   .team-pic {
     margin: auto;
   }
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+
 }
+  .team-info {
+    margin-bottom: 50px;
+  }
 }
 
 .sentMessage {
